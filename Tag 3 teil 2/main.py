@@ -20,7 +20,16 @@ print('1', array_1)
 
 #oxygen
 for i2 in range(12):
-	if 
+	if array_1 >= array_0:
+		oxygen[i2] = 1
+	else:
+		oxygen[i2] = 0
+print(oxygen)
+
+#co2
+for i3 in range(12):
+	if
+	
 
 
 
