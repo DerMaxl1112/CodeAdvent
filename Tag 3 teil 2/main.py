@@ -7,6 +7,9 @@ array_1 = [0] * 12
 oxygen = [0] * 12
 CO2 = [0] * 12
 
+oxygen_atribute = [0] * 12
+CO2_atribute = [0] * 12
+
 for line in lines:
     for i in range(12):
         if int(line[i] == "1"):
@@ -19,16 +22,27 @@ print('1', array_1)
 
 
 #oxygen
-for i2 in range(12):
-	if array_1 >= array_0:
-		oxygen[i2] = 1
-	else:
-		oxygen[i2] = 0
+for zaler in range(12):
+	oxygen_atribute = array_1[zaler]
+	for line2 in lines:
+		for i2 in range(12):
+			if line2[i2] == oxygen_atribute[i2]:
+				oxygen[i2] = line2[i2]
+			else:
+				oxygen[i2] = None
+			
+	for line3 in oxygen:
+	    for i3 in range(12):
+	        if int(line3[i3] == "1"):
+	            array_1[i] += 1
+ 	       else:
+    	        array_0[i] += 1
+ 
+	print('1', array_1)
 print(oxygen)
+		
+	
 
-#co2
-for i3 in range(12):
-	if
 	
 
 
